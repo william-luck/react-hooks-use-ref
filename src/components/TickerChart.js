@@ -5,6 +5,7 @@ import { addPoint } from "../utils/chart";
 function Ticker() {
   const [price, setPrice] = useState({ value: 0, ticks: 0 });
   const [color, setColor] = useState("black");
+  // stores the value of the previous price (which changes every second)
   const prevPrice = useRef(price);
   const canvasRef = useRef();
 
